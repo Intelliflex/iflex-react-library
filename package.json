@@ -1,0 +1,143 @@
+{
+  "name": "iflex-react-library",
+  "version": "1.0.55",
+  "description": "Modern React Ui Component",
+  "keywords": [
+    "create",
+    "react",
+    "library",
+    "create-react-library",
+    "component",
+    "iflex",
+    "intelliflex"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "umd:main": "dist/index.umd.js",
+  "homepage": "https://intelliflex.github.io/iflex-react-library",
+  "notes": "iflex-react-library - Presently babel-loader must be 8.1.0, all other dependecies should be upgradable, webpack dependency added to facilitate process.env and Snowpack alias to work with Storybook",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "start": "snowpack dev",
+    "build": "rollup -c",
+    "watch": "rollup -c --watch",
+    "test": "run-s test:unit test:lint test:build",
+    "test:lint": "eslint src/**/*.js",
+    "test:build": "run-s build",
+    "lint:fix": "prettier-eslint '**/*.js' --write",
+    "prepublish": "yarn build",
+    "storybook": "start-storybook -p 6006",
+    "predeploy": "snowpack build",
+    "deploy": "gh-pages -d build",
+    "deploy-storybook": "storybook-to-ghpages",
+    "build-storybook": "build-storybook -o ./build/storybook",
+    "predeploy-combo": "snowpack build && yarn build-storybook",
+    "deploy-combo": "gh-pages -d build",
+    "gh-pages": "gh-pages -d build"
+  },
+  "author": "",
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "npm run lint:fix"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/preset-react": "^7.10.1",
+    "@mdx-js/loader": "^1.6.22",
+    "@mdx-js/mdx": "^1.6.22",
+    "@open-wc/webpack-import-meta-loader": "^0.4.7",
+    "@rollup/plugin-alias": "^3.1.1",
+    "@rollup/plugin-image": "^2.0.6",
+    "@snowpack/plugin-babel": "^2.1.6",
+    "@snowpack/plugin-react-refresh": "^2.4.0",
+    "@snowpack/plugin-run-script": "^2.3.0",
+    "@snowpack/plugin-sass": "^1.3.0",
+    "@snowpack/plugin-webpack": "^2.3.0",
+    "@storybook/addon-docs": "^6.1.14",
+    "@storybook/addon-essentials": "^6.1.14",
+    "@storybook/addon-links": "^6.1.14",
+    "@storybook/addons": "^6.1.14",
+    "@storybook/eslint-config-storybook": "^3.0.0",
+    "@storybook/preset-scss": "^1.0.3",
+    "@storybook/react": "^6.1.14",
+    "@storybook/storybook-deployer": "^2.8.7",
+    "@testing-library/jest-dom": "^5.10.1",
+    "@testing-library/react": "^11.2.3",
+    "@testing-library/user-event": "^12.0.7",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "8.1.0",
+    "babel-plugin-macros": "^3.0.1",
+    "babel-plugin-styled-components": "^1.10.7",
+    "css-loader": "^5.0.1",
+    "eslint": "^7.17.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-config-standard-react": "^11.0.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.3",
+    "eslint-plugin-mdx": "^1.8.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "gh-pages": "3.1.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.2.11",
+    "postcss": "^8.2.4",
+    "prettier": "^2.2.1",
+    "prettier-eslint-cli": "^5.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-test-renderer": "^17.0.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.36.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.2",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-uglify": "^6.0.4",
+    "sass": "^1.32.4",
+    "sass-loader": "^10.1.1",
+    "snowpack": "^3.0.11",
+    "storybook": "^6.1.14",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.15.0"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Intelliflex/iflex-library"
+  },
+  "dependencies": {},
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
