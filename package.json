@@ -1,6 +1,6 @@
 {
   "name": "iflex-react-library",
-  "version": "1.0.56",
+  "version": "1.0.57",
   "description": "Modern React Ui Component",
   "keywords": [
     "create",
@@ -16,6 +16,10 @@
   "umd:main": "dist/index.umd.js",
   "homepage": "https://intelliflex.github.io/iflex-react-library",
   "notes": "iflex-react-library - Presently babel-loader must be 8.1.0, all other dependecies should be upgradable, webpack dependency added to facilitate process.env and Snowpack alias to work with Storybook",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Intelliflex/iflex-react-library"
+  },
   "scripts": {
     "prebuild": "rimraf dist",
     "start": "snowpack dev",
@@ -123,10 +127,6 @@
   "files": [
     "dist"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Intelliflex/iflex-library"
-  },
   "dependencies": {},
   "browserslist": {
     "production": [
