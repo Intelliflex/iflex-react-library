@@ -1,0 +1,299 @@
+{
+  "inputs": {
+    "_snowpack/env.js": {
+      "bytes": 97,
+      "imports": []
+    },
+    "_snowpack/pkg/common/_commonjsHelpers-668e6127.js": {
+      "bytes": 451,
+      "imports": []
+    },
+    "_snowpack/pkg/common/index-4f86a9c5.js": {
+      "bytes": 8631,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/_commonjsHelpers-668e6127.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/react.js": {
+      "bytes": 263,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/index-4f86a9c5.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/index-4f86a9c5.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/_commonjsHelpers-668e6127.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/react-dom.js": {
+      "bytes": 127525,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/_commonjsHelpers-668e6127.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/index-4f86a9c5.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/prop-types.js": {
+      "bytes": 2207,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/_commonjsHelpers-668e6127.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "build/library/Sample/DefaultComponent.js": {
+      "bytes": 753,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/prop-types.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "build/library/Sample/logo.svg.proxy.js": {
+      "bytes": 48,
+      "imports": []
+    },
+    "build/library/Sample/bootflex110.png.proxy.js": {
+      "bytes": 55,
+      "imports": []
+    },
+    "build/library/Sample/About.css": {
+      "bytes": 582,
+      "imports": []
+    },
+    "build/library/Sample/About.js": {
+      "bytes": 4030,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "build/library/Sample/logo.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "build/library/Sample/bootflex110.png.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/prop-types.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "build/library/Sample/About.css",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "build/library/Sample/Button.css": {
+      "bytes": 476,
+      "imports": []
+    },
+    "build/library/Sample/Button.js": {
+      "bytes": 2412,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/prop-types.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "build/library/Sample/Button.css",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "build/library/Sample/Layout.css": {
+      "bytes": 914,
+      "imports": []
+    },
+    "build/library/Sample/Layout.js": {
+      "bytes": 1588,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/prop-types.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "build/library/Sample/Layout.css",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "build/library/index.js": {
+      "bytes": 356,
+      "imports": [
+        {
+          "path": "build/library/Sample/DefaultComponent.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "build/library/Sample/About.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "build/library/Sample/Button.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "build/library/Sample/Layout.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "build/demo/App.css": {
+      "bytes": 73,
+      "imports": []
+    },
+    "build/demo/App.js": {
+      "bytes": 416,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "build/library/index.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "build/demo/App.css",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "build/index.js": {
+      "bytes": 865,
+      "imports": [
+        {
+          "path": "_snowpack/env.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/react-dom.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "build/demo/App.js",
+          "kind": "import-statement"
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "../~~bundle~~/build/index.js": {
+      "imports": [],
+      "exports": [],
+      "inputs": {
+        "_snowpack/env.js": {
+          "bytesInOutput": 186
+        },
+        "_snowpack/pkg/common/_commonjsHelpers-668e6127.js": {
+          "bytesInOutput": 418
+        },
+        "_snowpack/pkg/common/index-4f86a9c5.js": {
+          "bytesInOutput": 10627
+        },
+        "_snowpack/pkg/react.js": {
+          "bytesInOutput": 64
+        },
+        "_snowpack/pkg/react-dom.js": {
+          "bytesInOutput": 188736
+        },
+        "_snowpack/pkg/prop-types.js": {
+          "bytesInOutput": 1458
+        },
+        "build/library/Sample/DefaultComponent.js": {
+          "bytesInOutput": 672
+        },
+        "build/library/Sample/logo.svg.proxy.js": {
+          "bytesInOutput": 63
+        },
+        "build/library/Sample/bootflex110.png.proxy.js": {
+          "bytesInOutput": 77
+        },
+        "build/library/Sample/About.css": {
+          "bytesInOutput": 0
+        },
+        "build/library/Sample/About.js": {
+          "bytesInOutput": 3861
+        },
+        "build/library/Sample/Button.css": {
+          "bytesInOutput": 0
+        },
+        "build/library/Sample/Button.js": {
+          "bytesInOutput": 2116
+        },
+        "build/library/Sample/Layout.css": {
+          "bytesInOutput": 0
+        },
+        "build/library/Sample/Layout.js": {
+          "bytesInOutput": 1344
+        },
+        "build/library/index.js": {
+          "bytesInOutput": 48
+        },
+        "build/demo/App.css": {
+          "bytesInOutput": 0
+        },
+        "build/demo/App.js": {
+          "bytesInOutput": 181
+        },
+        "build/index.js": {
+          "bytesInOutput": 244
+        }
+      },
+      "bytes": 210885
+    },
+    "../~~bundle~~/build/index.css": {
+      "imports": [],
+      "inputs": {
+        "build/demo/App.css": {
+          "bytesInOutput": 67
+        },
+        "build/library/Sample/About.css": {
+          "bytesInOutput": 582
+        },
+        "build/library/Sample/Button.css": {
+          "bytesInOutput": 476
+        },
+        "build/library/Sample/Layout.css": {
+          "bytesInOutput": 821
+        }
+      },
+      "bytes": 2087
+    }
+  }
+}
