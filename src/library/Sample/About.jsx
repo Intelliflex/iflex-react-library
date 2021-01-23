@@ -30,7 +30,7 @@ const About = ({ showCounter, showReactLogo, showBootflexLogo }) => {
           <></>
         )}
         <p className='test-component-text'>
-          X-This component demonstrates a library component using Hooks, Images
+          This component demonstrates a library component using Hooks, Images
           and scss inside a library module file. If you install this library
           into an external app via npm these images and hooks will not created
           an error. Try modifying any of the sample components and see how state

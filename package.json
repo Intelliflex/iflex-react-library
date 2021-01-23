@@ -15,7 +15,7 @@
   "module": "dist/index.modern.js",
   "umd:main": "dist/index.umd.js",
   "homepage": "https://intelliflex.github.io/iflex-react-library",
-  "notes": "iflex-react-library - Presently babel-loader must be 8.1.0, all other dependecies should be upgradable, webpack dependency added to facilitate process.env and Snowpack alias to work with Storybook",
+  "notes": "iflex-react-library - Presently babel-loader must be 8.1.0, all other dependecies should be upgradable, webpack dependency was added to facilitate process.env and Snowpack alias to work with Storybook",
   "repository": {
     "type": "git",
     "url": "https://github.com/Intelliflex/iflex-react-library"

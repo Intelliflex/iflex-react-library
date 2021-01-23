@@ -1,13 +1,13 @@
-# Create React Component Libraries
+# iflex-react-library
 
 [![Build status](https://badge.buildkite.com/90ff98db996bb137c5be1bdce666c4b1ce68a25b17af0a6a04.svg?branch=master)](https://buildkite.com/harvey/react-component-library)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-## **`What?`**
+## **`What is it?`**
 
 **iflex-react-library** is a template to allow development and bundling of a react component library so that it can be shared as an NPM repository to your other applications or publically as an open source library. It also supports concurrent development of your app via a alias links to your library (so that you can import the library in same manner as you would when it is published) but also benefit from hot module reloading with react state preserved while making updates. Deployment of your library uses rollup (https://rollupjs.org/guide/en/) to publish library in three different formats (ESM, CommonJS ans UMD). Your local demonstration environment utilises Snowpack (https://www.snowpack.dev/) for compile speed, hot module reloading and minimal configuration and Storybook is also incorporated (and can be used optionally) to assist component documentation and showcasing.
 
-## **`Why?`**
+## **`Motivation`**
 
 If you have tried it, let's face it _**BUILDING REACT COMPONENT LIBRARIES IS NOT EASY!**_. Having used many existing templates utilising webpack or rollup I have spent many days and been frustrated by various hurdles such as:-
 
