@@ -1,7 +1,7 @@
 {
   "name": "iflex-react-library",
-  "version": "1.0.57",
-  "description": "Modern React Ui Component",
+  "version": "1.0.58",
+  "description": "A Modern React Ui Component",
   "keywords": [
     "create",
     "react",
@@ -31,13 +31,10 @@
     "lint:fix": "prettier-eslint '**/*.js' --write",
     "prepublish": "yarn build",
     "storybook": "start-storybook -p 6006",
-    "predeploy": "snowpack build",
-    "deploy": "gh-pages -d build",
-    "deploy-storybook": "storybook-to-ghpages",
-    "build-storybook": "build-storybook -o ./build/storybook",
-    "predeploy-combo": "snowpack build && yarn build-storybook",
-    "deploy-combo": "gh-pages -d build",
-    "gh-pages": "gh-pages -d build"
+    "deploy": "snowpack build",
+    "deploy-ghpages-storybook": "snowpack build && storybook-to-ghpages",
+    "deploy-ghpages-demo": "snowpack build && node iflex-react-library-ghpages && gh-pages -d build",
+    "deploy-ghpages": "snowpack build && build-storybook -o ./build/storybook && node iflex-react-library-ghpages && gh-pages -d build"
   },
   "author": "",
   "license": "MIT",
@@ -103,6 +100,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-test-renderer": "^17.0.1",
+    "replace-in-file": "^6.1.0",
     "rimraf": "^3.0.2",
     "rollup": "^2.36.2",
     "rollup-plugin-babel": "^4.4.0",
